@@ -4,7 +4,7 @@ This repository contains sample code for the "C# Interfaces".
 # Running the Sample
 The code sample can be followed using Visual Studio (Windows) or Visual Studio Code (Windows, Linux, macOS).
 
-.NET 5.0 - development tool options
+.NET 6.0 - development tool options
 
 Visual Studio 2022 (Community Edition)
 Visual Studio 2019 (Community Edition)
