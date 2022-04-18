@@ -23,7 +23,7 @@ public class PeopleController : Controller
 
     public IActionResult UseFileLogger()
     {
-        IPeopleLogger logger = new FileLogger();
+        var logger = new FileLogger();
         try
         {
             ViewData["Title"] = "Using FileLogger";
@@ -32,7 +32,7 @@ public class PeopleController : Controller
         }
         catch (Exception ex)
         {
-            logger.LogException(ex);
+            ((IPeopleLogger)logger).LogException(ex);
             return View("Error", new ErrorViewModel());
         }
     }
